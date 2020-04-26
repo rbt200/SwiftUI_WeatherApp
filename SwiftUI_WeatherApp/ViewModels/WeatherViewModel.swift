@@ -34,9 +34,9 @@ class WeatherViewModel: ObservableObject {
             return ""
         }
     }
-    
+
     var cityName: String = ""
-    
+
     func search() {
         if let city = self.cityName.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) {
             fetchWeather(by: city)
